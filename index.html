@@ -58,7 +58,7 @@
                 <section>
                     <section>
                         <h2>Problem #1: Persistence</h2>
-                        <h3>How do you keep your code backed up?</h3>
+                        <p>How do you back up your code?</p>
                     </section>
                     <section>
                         <img src="images/dropbox.png" />
@@ -78,15 +78,15 @@
                 <section>
                     <section>
                         <h2>Problem #2: Versioning</h2>
-                        <h3>v0.1, v0.5, v2.0...</h3>
+                        <p>v0.1, v0.5, v2.0...</p>
                     </section>
                     <section>
                         <h2>File Naming (or folders)</h2>
                         <ul>
-                            <li>helloworld.py</li>
-                            <li>helloworld-2.py</li>
-                            <li>helloworld-FINAL.py</li>
-                            <li>helloworld-REAL-FINAL.py</li>
+                            <li class="fragment">helloworld.py</li>
+                            <li class="fragment">helloworld-2.py</li>
+                            <li class="fragment">helloworld-FINAL.py</li>
+                            <li class="fragment">helloworld-REAL-FINAL.py</li>
                         </ul>
                     </section>
                     <section>
@@ -101,7 +101,7 @@
 class BetterValidator():
     def get():
         ...
-                            </code></pre>
+                        </code></pre>
                     </section>
                     <section>
                         <h2>Stale Files (Hoarder!)</h2>
@@ -113,28 +113,19 @@ class BetterValidator():
                 <section>
                     <section>
                         <h2>Problem #3: Experimenting</h2>
-                        <h3>(New Technology, Design, Architecture, etc.)</h3>
-                        <p>TODO Use Fragmented VIews here</p>
+                        <p>Playing with a new technology, design, or pattern.</p>
                     </section>
                     <section>
-                        <h2>Steps to Test on Your Codebase:</h2>
+                        <h2>Steps:</h2>
                         <p>(without breaking existing app!)</p>
-                    </section>
-                    <section>
-                        <h3>Make copy of app directory</h3>
-                    </section>
-                    <section>
-                        <h3>Add new technology/design + custom code</h3>
-                    </section>
-                    <section>
-                        <h3>Switch back and forth between both apps</h3>
-                        <p>(You're still supporting original app!)</p>
-                    </section>
-                    <section>
-                        <h3>Toss it or manually merge the two apps</h3>
+                        <ul>
+                            <li class="fragment">Make copy of app directory</li>
+                            <li class="fragment">Make your changes</li>
+                            <li class="fragment">Deploy new app to test</li>
+                            <li class="fragment">Toss it or manually merge into original directory (not fun!)</li>
+                        </ul>
                     </section>
                 </section>
-
 
                 <section>
                     <section>
@@ -142,64 +133,76 @@ class BetterValidator():
                     </section>
                     <section>
                         <h2>Similar to Persistence</h2>
-                        <p>TODO use fragmented views</p>
                         <ul>
-                            <li>Share code via thumb drives/Dropbox</li>
-                            <li>Email it to your partners</li>
-                            <li>Pair programming (not really a problem but souldn't be your only option)</li>
+                            <li class="fragment">Share code via thumb drives/DropBox</li>
+                            <li class="fragment">Email it to your partners</li>
+                            <li class="fragment">Working on same computer to keep one copy</li>
                         </ul>
                     </section>
                     <section>
-                        <h2>What if you're working on the same file?</h2>
-                        <p>TODO use fragmented views</p>
-                        <h2>What if you're working on the same function?</h2>
-                        <h2>MERGE!</h2>
+                        <p>What if  you're working within same file?</p>
+                        <p class="fragment">Within same function?</p>
+                        <p class="fragment">MERGE!</p>
                     </section>
                 </section>
 
                 <section>
                     <h2>Git to the rescue!</h2>
-                    <h3>(and other source control systems)</h3>
-                    <p>TODO use fragment views</p>
                 </section>
 
                 <section>
-                    <h2>Keeps and manages "snapshots" of your project</h2>
-                    <h2>Easy to jump to old snapshots.  Saved "forever"</h2>
-                    <h3>Solves: Versioning, Experimenting, Persistence</h3>
+                    <h2>What does it do?</h2>
                 </section>
 
                 <section>
-                    <h2>Allows "branching"</h2>
-                    <h3>Creates clone for you of project at current state</h3>
-                    <h3>Can give it a special name like super-feature-experiment</h3>
-                    <h3>Allows you to switch between branches (can have many branches!)</h3>
-                    <h3>If branch doesn't work, just switch back to original branch and forget the other one. (hoarder friendly)</h3>
+                    <h2>Commits</h2>
+                    <ul>
+                        <li class="fragment">Save a snapshot of what your code looks like</li>
+                        <li class="fragment">Snapshot history is there forever</li>
+                        <li class="fragment">Easy jumping between commits to see old code</li>
+                        <li class="fragment">Commits solve <b>Persistence, Versioning, Experimenting</b></li>
+                    </ul>
                 </section>
 
                 <section>
-                    <h2>Manages merges for you!</h2>
-                    <h3>Merge branches for you upon request!</h3>
-                    <h3>Needs your help only if things get real ugly!</h3>
-                    <h3>Solves: Collaboration</h3>
+                    <h2>Branching</h2>
+                    <ul>
+                        <li class="fragment">Isolated clone of your current branch (default is <b>master</b></li>
+                        <li class="fragment">Give it unique identifier like: <b>new-feature-experiment</b></li>
+                        <li class="fragment">Easily switch between branches</li>
+                        <li class="fragment">Can merge branches back together</li>
+                        <li class="fragment">Branches solve <b>Experimentation</b> (plus other things)</li>
+                    </ul>
                 </section>
 
                 <section>
-                    <h2>Can setup a Git server to share code between people</h2>
-                    <h3>Like Dropbox but making changes in folder doesn't automatically make changes to everyone elses folders</h3>
-                    <h3>Have to explicitly tell Git to sync everything.</h3>
+                    <h2>Merging</h2>
+                    <ul>
+                        <li class="fragment">Merges code for you! <span class="fragment">(sort of)</span></li>
+                        <li class="fragment">Needs your help if things get ugly (multiple people modifying same line)</li>
+                        <li class="fragment">Merging helps with <b>Collaboration, Experimentation</b></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Setup Git Server</h2>
+                    <ul>
+                        <li class="fragment">Save your code and git data in the cloud</li>
+                        <li class="fragment">Allows multiple people to work on the project</li>
+                        <li class="fragment">Only sync when you're ready (not automatic like DropBox)</li>
+                        <li class="fragment">Not trivial to set up</li>
+                    </ul>
                 </section>
 
                 <section>
                     <section>
                         <h2>GitHub</h2>
+                        <p class="fragment">A Git server already setup for you</p>
+                        <p class="fragment">Huge community to collaborate with</p>
+                        <p class="fragment">Free! (mostly)</p>
                     </section>
                     <section>
-                        <h2>A git server already setup for you</h2>
-                        <h3>(Don't have to setup your own servers, etc.)</h3>
-                        <h3>Free! (if you share all of your code!)</h3>
-                    </section>
-                    <section>
+                        <h2>Community</h2>
                         <h2>Can research, use, and contribute to thousands of projects!</h2>
                     </section>
                     <section>
@@ -399,7 +402,11 @@ function linkify( selector ) {
                         <p class="fragment highlight-red">highlight-red</p>
                         <p class="fragment highlight-green">highlight-green</p>
                         <p class="fragment highlight-blue">highlight-blue</p>
-                        <p class="fragment current-visible">current-visible</p>
+                        <p class="fr<ol>
+                            <li class="fragment"><code>any type</code></li>
+                            <li class="fragment"><em>of view</em></li>
+                            <li class="fragment"><strong>fragments</strong></li>
+                        </ol>agment current-visible">current-visible</p>
                         <p class="fragment highlight-current-blue">highlight-current-blue</p>
                     </section>
                 </section>
