@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>reveal.js - The HTML Presentation Framework</title>
+        <title>Git Excited</title>
 
         <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
         <meta name="author" content="Hakim El Hattab">
@@ -43,80 +43,86 @@
             <!-- Any section element inside of this container is displayed as a slide -->
             <div class="slides">
                 <section>
-                    <h1>[Clever Git Title]</h1>
-                    <h3>[Clever Git Sub-Title]</h3>
+                    <h1>Git Excited</h1>
                     <p>
                         <small>Created by Carlos Rivera</small>
                     </p>
                 </section>
 
                 <section>
-                    <h2>First: A World Without Git</h2>
+                    <h2>A World Without Git</h2>
                 </section>
 
                 <!-- Example of nested vertical slides -->
                 <section>
-                    <section>
-                        <h2>Problem #1: Persistence</h2>
-                        <p>How do you back up your code?</p>
-                    </section>
-                    <section>
-                        <img src="images/dropbox.png" />
-                        <img src="images/google_drive.png" />
-                    </section>
-                    <section>
-                        <img src="images/thumb_drive.png" />
-                    </section>
-                    <section>
-                        <img src="images/email.png" />
-                    </section>
-                    <section>
-                        <img src="images/printer.png" />
-                    </section>
+                    <h2>Task: Backing up code</h2>
+                    <img class="fragment" height="200px" src="images/dropbox.png" />
+                    <img class="fragment" height="200px" src="images/thumb_drive.png" />
+                    <img class="fragment" height="200px" src="images/email.png" />
+                    <img class="fragment" height="200px" src="images/printer.png" />
                 </section>
 
                 <section>
-                    <section>
-                        <h2>Problem #2: Versioning</h2>
-                        <p>v0.1, v0.5, v2.0...</p>
-                    </section>
-                    <section>
-                        <h2>File Naming (or folders)</h2>
-                        <ul>
-                            <li class="fragment">helloworld.py</li>
-                            <li class="fragment">helloworld-2.py</li>
-                            <li class="fragment">helloworld-FINAL.py</li>
-                            <li class="fragment">helloworld-REAL-FINAL.py</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h2>Comment Blocks</h2>
+                    <h2>Problems?</h2>
+                </section>
 
-                        <pre><code data-trim contenteditable>
+                <section>
+                <section>
+                    <h2>Task: Versioning</h2>
+                    <p>(Holding on to the past)</p>
+                    <img src="images/dontletgo.gif" />
+                </section>
+                <section>
+                    <h2>Naming</h2>
+                    <ul>
+                        <li class="fragment">helloworld.py</li>
+                        <li class="fragment">helloworld-2.py</li>
+                        <li class="fragment">helloworld-FINAL.py</li>
+                        <li class="fragment">helloworld-REAL-FINAL.py</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Comment Blocks</h2>
+
+                    <pre><code data-trim contenteditable>
+class Validator():
+    def get():
+        ...
+    def post():
+        ...
+                    </code></pre>
+                    <pre class="fragment"><code data-trim contenteditable>
 # class Validator():
 #     def get():
 #         ...
 #     def post():
 #         ...
-class BetterValidator():
+                    </code></pre>
+
+                    <pre class="fragment"><code data-trim contenteditable>
+# class Validator():
+#     def get():
+#         ...
+#     def post():
+#         ...
+class Validator():
     def get():
         ...
-                        </code></pre>
-                    </section>
-                    <section>
-                        <h2>Stale Files (Hoarder!)</h2>
-                        <p>Keeping unused files for future reference</p>
-                        <img src="images/hoarder.jpg" />
-                    </section>
+                    </code></pre>
                 </section>
-
+                <section>
+                    <h2>Stale Files</h2>
+                    <p>Keeping obsolete files for future reference</p>
+                    <img src="images/hoarder.jpg" />
+                </section>
+                </section>
                 <section>
                     <section>
-                        <h2>Problem #3: Experimenting</h2>
-                        <p>Playing with a new technology, design, or pattern.</p>
+                        <h2>Task: Experimenting</h2>
+                        <img src="images/ketchup.gif" />
                     </section>
                     <section>
-                        <h2>Steps:</h2>
+                        <h3>Steps:</h3>
                         <p>(without breaking existing app!)</p>
                         <ul>
                             <li class="fragment">Make copy of app directory</li>
@@ -129,326 +135,95 @@ class BetterValidator():
 
                 <section>
                     <section>
-                        <h2>Problem #4: Collaboration</h2>
+                        <h2>Task: Collaboration</h2>
+                        <img src="images/tower.jpg" />
                     </section>
                     <section>
-                        <h2>Similar to Persistence</h2>
-                        <ul>
-                            <li class="fragment">Share code via thumb drives/DropBox</li>
-                            <li class="fragment">Email it to your partners</li>
-                            <li class="fragment">Working on same computer to keep one copy</li>
-                        </ul>
+                        <h2><img width="300px" src="images/dropbox.png" /></h2>
+                        <p class="fragment">What if you want to work on same file?</p>
+                        <p class="fragment">Same function?</p>
                     </section>
                     <section>
-                        <p>What if  you're working within same file?</p>
-                        <p class="fragment">Within same function?</p>
-                        <p class="fragment">MERGE!</p>
+                        <img src="images/walkie.jpg" />
                     </section>
                 </section>
 
                 <section>
                     <h2>Git to the rescue!</h2>
+                    <img src="images/hulk.gif" />
                 </section>
 
                 <section>
-                    <h2>What does it do?</h2>
-                </section>
-
-                <section>
-                    <h2>Commits</h2>
+                    <h2>Overview</h2>
                     <ul>
-                        <li class="fragment">Save a snapshot of what your code looks like</li>
-                        <li class="fragment">Snapshot history is there forever</li>
-                        <li class="fragment">Easy jumping between commits to see old code</li>
-                        <li class="fragment">Commits solve <b>Persistence, Versioning, Experimenting</b></li>
+                        <li class="fragment">Git manages your files</li>
+                        <li class="fragment">Keeps track of changes throughout the life of a project</li>
+                        <li class="fragment"><strong>commit</strong>s are used to create snapshots of your project</li>
+                        <li class="fragment">View what your codebase looked like at time of a commit</li>
+                        <li class="fragment">Easy to undo changes.  Hard to break stuff after a commit</li>
+                        <li class="fragment">Easy to clone your project for experimenting (called <strong>branches</strong>)</li>
+                        <li class="fragment">Easily merge different versions of a file</li>
                     </ul>
                 </section>
 
                 <section>
-                    <h2>Branching</h2>
+                    <h2>Basic Workflow</h2>
                     <ul>
-                        <li class="fragment">Isolated clone of your current branch (default is <b>master</b></li>
-                        <li class="fragment">Give it unique identifier like: <b>new-feature-experiment</b></li>
-                        <li class="fragment">Easily switch between branches</li>
-                        <li class="fragment">Can merge branches back together</li>
-                        <li class="fragment">Branches solve <b>Experimentation</b> (plus other things)</li>
+                        <li class="fragment">Set up directory with git</li>
+                        <li class="fragment">Make some changes to files</li>
+                        <li class="fragment">Looks good?  <strong>commit</strong>.  Otherwise, easy to undo all changes.</li>
+                    </ul>
+                    <br />
+                    <p class="fragment">(This is all happening on your local computer)</p>
+                </section>
+
+                <section>
+                    <h2>Git Server</h2>
+                    <ul>
+                        <li class="fragment">Not required, but very helpful</li>
+                        <li class="fragment">Store your code in the cloud for safe keeping.</li>
+                        <li class="fragment">Like DropBox, but only syncs to the cloud when you tell it</li>
+                        <li class="fragment">After you're done with commits, you need to <strong>push</strong> your changes to the server</li>
+                        <li class="fragment">Other developers can pull down your project to use it or contribute</li>
+                        <li class="fragment">After new commits are pushed to server, everyone else needs to <strong>pull</strong> those changes</li>
                     </ul>
                 </section>
 
                 <section>
-                    <h2>Merging</h2>
+                    <img src="images/github.jpg" />
                     <ul>
-                        <li class="fragment">Merges code for you! <span class="fragment">(sort of)</span></li>
-                        <li class="fragment">Needs your help if things get ugly (multiple people modifying same line)</li>
-                        <li class="fragment">Merging helps with <b>Collaboration, Experimentation</b></li>
+                        <li class="fragment">A Git server already setup for you</li>
+                        <li class="fragment">Community of developers</li>
+                        <li class="fragment">Provides a Gui for using Git without command line</li>
+                        <li class="fragment">Research or contribute to other projects</li>
+                        <li class="fragment">Online resume/portfolio for developers</li>
+                        <li class="fragment">Free!</li>
                     </ul>
                 </section>
-
                 <section>
-                    <h2>Setup Git Server</h2>
-                    <ul>
-                        <li class="fragment">Save your code and git data in the cloud</li>
-                        <li class="fragment">Allows multiple people to work on the project</li>
-                        <li class="fragment">Only sync when you're ready (not automatic like DropBox)</li>
-                        <li class="fragment">Not trivial to set up</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <section>
-                        <h2>GitHub</h2>
-                        <p class="fragment">A Git server already setup for you</p>
-                        <p class="fragment">Huge community to collaborate with</p>
-                        <p class="fragment">Free! (mostly)</p>
-                    </section>
-                    <section>
-                        <h2>Community</h2>
-                        <h2>Can research, use, and contribute to thousands of projects!</h2>
-                    </section>
-                    <section>
-                        <h2>Huge projects on GitHub!</h2>
-                        <h3>Python, Node.js, Angular.js (Google), Bootstrap (Twitter)</h3>
-                    </section>
-                    <section>
-                        <h2>Can specify issues with projects, add comments, download bleading edge. Fix issues.</h2>
-                    </section>
-                    <section>
-                        <h3>Online Resume/Portfolio!</h3>
-                    </section>
+                    <h2>Big Projects on GitHub</h2>
+                    <img height="200px" src="images/python.jpg" />
+                    <img src="images/angularjs.png" />
+                    <img height="200px" src="images/bootstrap.jpg" />
+                    <img height="200px" src="images/nodejs.png" />
                 </section>
                 <section>
-                    <h2>Project</h2>
+                    <h2>Class Project</h2>
                     <ul>
-                        <li>Fork my repo: blahblah.com</li>
-                        <li>Clone my repo</li>
-                        <li>Run app (appengine)</li>
-                        <li>Fix assigned issue</li>
-                        <li>Commit it (with comment!)</li>
-                        <li>Create pull request in GitHub</li>
+                        <li>Find the <strong>ChatterBox</strong> project by <strong>LasaComputerScience</strong> user in GitHub</li>
+                        <li>Claim an issue in the Issues tab</li>
+                        <li><strong>Fork</strong> the project (create a clone of the project under your account)</li>
+                        <li><strong>clone</strong> the project on your computer.</li>
+                        <li>Run app locally using App Engine (don't need to deploy it)</li>
+                        <li>Fix your issue</li>
+                        <li>Commit it (with comment!).  Then push changes to GitHub (Sync)</li>
+                        <li>Create <strong>pull request</strong> in GitHub</li>
                         <li>After accepted, go to your GitHub profile to view list of contributed projects</li>
                     </ul>
                 </section>
-
-                <section data-markdown>
-                    <script type="text/template">
-                        ## Markdown support
-
-                        For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-                        ```
-                        <section data-markdown>
-                          ## Markdown support
-
-                          For those of you who like that sort of thing.
-                          Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-                        </section>
-                        ```
-                    </script>
-                </section>
-
-                <section id="transitions">
-                    <h2>Transition Styles</h2>
-                    <p>
-                        You can select from different transitions, like: <br>
-                        <a href="?transition=cube#/transitions">Cube</a> -
-                        <a href="?transition=page#/transitions">Page</a> -
-                        <a href="?transition=concave#/transitions">Concave</a> -
-                        <a href="?transition=zoom#/transitions">Zoom</a> -
-                        <a href="?transition=linear#/transitions">Linear</a> -
-                        <a href="?transition=fade#/transitions">Fade</a> -
-                        <a href="?transition=none#/transitions">None</a> -
-                        <a href="?#/transitions">Default</a>
-                    </p>
-                </section>
-
-                <section id="themes">
-                    <h2>Themes</h2>
-                    <p>
-                        Reveal.js comes with a few themes built in: <br>
-                        <a href="?#/themes">Default</a> -
-                        <a href="?theme=sky#/themes">Sky</a> -
-                        <a href="?theme=beige#/themes">Beige</a> -
-                        <a href="?theme=simple#/themes">Simple</a> -
-                        <a href="?theme=serif#/themes">Serif</a> -
-                        <a href="?theme=night#/themes">Night</a> <br>
-                        <a href="?theme=moon#/themes">Moon</a> -
-                        <a href="?theme=solarized#/themes">Solarized</a>
-                    </p>
-                    <p>
-                        <small>
-                            * Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-                        </small>
-                    </p>
-                </section>
-
                 <section>
-                    <h2>Global State</h2>
-                    <p>
-                        Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-                        will be added as a class to the document element when the slide is open. This lets you
-                        apply broader style changes, like switching the background.
-                    </p>
+                    <h2>Get more help at <a href="https://help.github.com">help.github.com</a></h2>
                 </section>
-
-                <section data-state="customevent">
-                    <h2>Custom Events</h2>
-                    <p>
-                        Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-                    </p>
-                    <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-    console.log( '"customevent" has fired' );
-} );
-                    </code></pre>
-                </section>
-
-                <section>
-                    <section data-background="#007777">
-                        <h2>Slide Backgrounds</h2>
-                        <p>
-                            Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-                        </p>
-                        <a href="#" class="image navigate-down">
-                            <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-                        </a>
-                    </section>
-                    <section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-                        <h2>Image Backgrounds</h2>
-                        <pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-                    </section>
-                    <section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-                        <h2>Repeated Image Backgrounds</h2>
-                        <pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-                    </section>
-                </section>
-
-                <section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-                    <h2>Background Transitions</h2>
-                    <p>
-                        Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-                    </p>
-                </section>
-
-                <section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-                    <h2>Background Transition Override</h2>
-                    <p>
-                        You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-                    </p>
-                </section>
-
-                <section>
-                    <h2>Clever Quotes</h2>
-                    <p>
-                        These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-                        &ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-                    </p>
-                    <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-                        &ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-                        reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-                    </blockquote>
-                </section>
-
-                <section>
-                    <h2>Pretty Code</h2>
-                    <pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-                    </code></pre>
-                    <p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-                </section>
-
-                <section>
-                    <h2>Intergalactic Interconnections</h2>
-                    <p>
-                        You can link between slides internally,
-                        <a href="#/2/3">like this</a>.
-                    </p>
-                </section>
-
-                <section>
-                    <section id="fragments">
-                        <h2>Fragmented Views</h2>
-                        <p>Hit the next arrow...</p>
-                        <p class="fragment">... to step through ...</p>
-                        <ol>
-                            <li class="fragment"><code>any type</code></li>
-                            <li class="fragment"><em>of view</em></li>
-                            <li class="fragment"><strong>fragments</strong></li>
-                        </ol>
-
-                        <aside class="notes">
-                            This slide has fragments which are also stepped through in the notes window.
-                        </aside>
-                    </section>
-                    <section>
-                        <h2>Fragment Styles</h2>
-                        <p>There's a few styles of fragments, like:</p>
-                        <p class="fragment grow">grow</p>
-                        <p class="fragment shrink">shrink</p>
-                        <p class="fragment roll-in">roll-in</p>
-                        <p class="fragment fade-out">fade-out</p>
-                        <p class="fragment highlight-red">highlight-red</p>
-                        <p class="fragment highlight-green">highlight-green</p>
-                        <p class="fragment highlight-blue">highlight-blue</p>
-                        <p class="fr<ol>
-                            <li class="fragment"><code>any type</code></li>
-                            <li class="fragment"><em>of view</em></li>
-                            <li class="fragment"><strong>fragments</strong></li>
-                        </ol>agment current-visible">current-visible</p>
-                        <p class="fragment highlight-current-blue">highlight-current-blue</p>
-                    </section>
-                </section>
-
-                <section>
-                    <h2>Spectacular image!</h2>
-                    <a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-                        <img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-                    </a>
-                </section>
-
-                <section>
-                    <h2>Export to PDF</h2>
-                    <p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-                    <iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-                    <script>
-                        document.getElementById('slideshare').attributeName = 'allowfullscreen';
-                    </script>
-                </section>
-
-                <section>
-                    <h2>Take a Moment</h2>
-                    <p>
-                        Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-                        during a presentation.
-                    </p>
-                </section>
-
-                <section>
-                    <h2>Stellar Links</h2>
-                    <ul>
-                        <li><a href="http://slid.es">Try the online editor</a></li>
-                        <li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-                        <li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h1>THE END</h1>
-                    <h3>BY Hakim El Hattab / hakim.se</h3>
-                </section>
-
             </div>
 
         </div>
