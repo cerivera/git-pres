@@ -69,8 +69,8 @@
                 <section>
                 <section>
                     <h2>Task: Versioning</h2>
-                    <p>(Holding on to the past)</p>
-                    <img src="images/dontletgo.gif" />
+                    <p>v0.1, v0.5, v2.0, ...</p>
+                    <img src="images/hoarder.jpg" />
                 </section>
                 <section>
                     <h2>Naming</h2>
@@ -85,35 +85,37 @@
                     <h2>Comment Blocks</h2>
 
                     <pre><code data-trim contenteditable>
-class Validator():
-    def get():
+class List():
+    def append():
         ...
-    def post():
+    def delete():
         ...
                     </code></pre>
                     <pre class="fragment"><code data-trim contenteditable>
-# class Validator():
-#     def get():
+# class List():
+#     def append():
 #         ...
-#     def post():
+#     def delete():
 #         ...
                     </code></pre>
 
                     <pre class="fragment"><code data-trim contenteditable>
-# class Validator():
-#     def get():
+# class List():
+#     def append():
 #         ...
-#     def post():
+#     def delete():
 #         ...
-class Validator():
-    def get():
+class BetterList():
+    def append():
+        ...
+    def delete()
         ...
                     </code></pre>
                 </section>
                 <section>
                     <h2>Stale Files</h2>
-                    <p>Keeping obsolete files for future reference</p>
-                    <img src="images/hoarder.jpg" />
+                    <p>Keeping obsolete files around</p>
+                    <img src="images/dontletgo.gif" />
                 </section>
                 </section>
                 <section>
@@ -149,19 +151,19 @@ class Validator():
                 </section>
 
                 <section>
-                    <h2>Git to the rescue!</h2>
+                    <h2>Git to the rescue</h2>
                     <img src="images/hulk.gif" />
                 </section>
 
                 <section>
                     <h2>Overview</h2>
                     <ul>
-                        <li class="fragment">Git manages your files</li>
+                        <li class="fragment">Git manages versions of your files/code</li>
                         <li class="fragment">Keeps track of changes throughout the life of a project</li>
-                        <li class="fragment"><strong>commit</strong>s are used to create snapshots of your project</li>
+                        <li class="fragment"><strong>commits</strong> are used to create snapshots of your project</li>
                         <li class="fragment">View what your codebase looked like at time of a commit</li>
                         <li class="fragment">Easy to undo changes.  Hard to break stuff after a commit</li>
-                        <li class="fragment">Easy to clone your project for experimenting (called <strong>branches</strong>)</li>
+                        <li class="fragment">Easy to clone your project for experimenting (<strong>branches</strong>)</li>
                         <li class="fragment">Easily merge different versions of a file</li>
                     </ul>
                 </section>
@@ -179,12 +181,13 @@ class Validator():
 
                 <section>
                     <h2>Git Server</h2>
+                    <img src="images/git.gif" />
                     <ul>
+                        <li class="fragment">Setup the same repo on a remote computer</li>
                         <li class="fragment">Not required, but very helpful</li>
-                        <li class="fragment">Store your code in the cloud for safe keeping.</li>
                         <li class="fragment">Like DropBox, but only syncs to the cloud when you tell it</li>
-                        <li class="fragment">After you're done with commits, you need to <strong>push</strong> your changes to the server</li>
-                        <li class="fragment">Other developers can pull down your project to use it or contribute</li>
+                        <li class="fragment">After you're done with commits, you need to <strong>push</strong> your changes to the specific server</li>
+                        <li class="fragment">Other developers can access that server to use or contribute to your project</li>
                         <li class="fragment">After new commits are pushed to server, everyone else needs to <strong>pull</strong> those changes</li>
                     </ul>
                 </section>
@@ -194,7 +197,7 @@ class Validator():
                     <ul>
                         <li class="fragment">A Git server already setup for you</li>
                         <li class="fragment">Community of developers</li>
-                        <li class="fragment">Provides a Gui for using Git without command line</li>
+                        <li class="fragment">Have official desktop application to make Git easier</li>
                         <li class="fragment">Research or contribute to other projects</li>
                         <li class="fragment">Online resume/portfolio for developers</li>
                         <li class="fragment">Free!</li>
@@ -210,7 +213,7 @@ class Validator():
                 <section>
                     <h2>Class Project</h2>
                     <ul>
-                        <li>Find the <strong>ChatterBox</strong> project by <strong>LasaComputerScience</strong> user in GitHub</li>
+                        <li>Find the <strong>ChatterBox</strong> project by <strong>LasaComputerScience</strong> user on GitHub</li>
                         <li>Claim an issue in the Issues tab</li>
                         <li><strong>Fork</strong> the project (create a clone of the project under your account)</li>
                         <li><strong>clone</strong> the project on your computer.</li>
